@@ -3,6 +3,8 @@ package model;
 public class Empregado {
 	private String nome;
 	private int horas;
+	private double valorPorHora;
+	
 	public String getNome() {
 		return nome;
 	}
@@ -21,5 +23,4 @@ public class Empregado {
 	public void setValorPorHora(double valorPorHora) {
 		this.valorPorHora = valorPorHora;
 	}
-	private double valorPorHora;
 }
