@@ -47,5 +47,13 @@ public class EmpregadoTerceirizadoTest {
 		empTer.setAdicional();
 		assertEquals(0, empTer.getAdicional());
 	}
+	
+	
+	//teste para validar se é salario minimo. feito por Kelvin
+	@Test
+	public void TesteRealizaPagemento() throws PagFunTerceiroException {
+		double a = empTer.realizarPagamento();
+		assertEquals(1100,a);
+	}
 
 }
