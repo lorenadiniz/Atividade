@@ -22,6 +22,15 @@ public class EmpregadoTerceirizado extends Empregado {
 		adicional = 0;
 	}
 	
+	//ADICIONADO A VALIDAÇÃO A EMPREGADOS TERCEIROS 40 HORAS SEMANAIS.
+	
+	public void setHoras(int horas) {
+		if (horas > 40) {
+			throw new IllegalArgumentException(
+					"O número de horas trabalhadas por funcionários deve ser menor ou igual a 40 horas mensais.");
+		}
+		this.horas = horas;
+	}
 	
 	//ADICIONADO A VALIDAÇÃO A EMPREGADOS TERCEIROS NO VALOR POR GORA ENTRE 30.00 E 200.
 	
