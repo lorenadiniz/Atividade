@@ -2,8 +2,8 @@ package model;
 
 public class Empregado {
 	private String nome;
-	private int horas;
-	private double valorPorHora;
+	protected int horas;
+	protected double valorPorHora;
 
 	public static final Double SALARIO_MINIMO = 1100.0;
 
